@@ -19,15 +19,8 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
  * @author maciejszwaczka
  */
 public class XLSWriter {
-   private static XLSWriter instance = null;
-   protected XLSWriter() {
-      // Exists only to defeat instantiation.
-   }
-   public static XLSWriter getInstance() {
-      if(instance == null) {
-         instance = new XLSWriter();
-      }
-      return instance;
+   private XLSWriter() {
+       
    }
    public static void writeToXLS(List<Product> products,String category)
     {
