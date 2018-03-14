@@ -24,12 +24,12 @@ import sun.nio.cs.StandardCharsets;
 
 
 public class Parser {
-    public int index;
-    public Parser()
+    public static int index;
+    private Parser()
     {
         this.index=0;
     }
-    public List<Product> parse(String url)
+    public static List<Product> parse(String url)
     {
         List<Product> products=new ArrayList<Product>();
         Document doc=null;
